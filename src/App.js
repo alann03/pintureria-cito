@@ -1,11 +1,7 @@
+import { Home } from "./screens/Home";
+
 function App() {
-	return (
-		<div>
-			<header>
-				<p>Hola</p>
-			</header>
-		</div>
-	);
+	return <Home />;
 }
 
 export default App;
