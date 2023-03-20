@@ -1,4 +1,4 @@
-const PAINT_SHOP_INFO = {
+export const PAINT_SHOP_INFO = {
 	adress: "Gral. Conrado Villegas 2873, Hurlingham, Provincia de Buenos Aires",
 	brands: [
 		"Alba",
