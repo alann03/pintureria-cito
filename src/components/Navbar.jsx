@@ -12,8 +12,7 @@ import LogoIMG from "../assets/img/transparent-logo.png";
 
 const { social_networks } = PAINT_SHOP_INFO;
 
-export const Navbar = () => {
-
+export const Navbar = ({ second }) => {
   const [menu, setMenu] = useState(false);
 
   const toggleMenu = () => {
@@ -21,7 +20,7 @@ export const Navbar = () => {
   };
 
   return (
-    <StyledNavbar>
+    <StyledNavbar style={{ position: second ? "block" : "fixed", opacity: second ? 0 : 1, zIndex: second ? -999 : 999 }}>
       <div className='topNavbar'>
         <img className="shippingSVG" src={ShippingSVG} alt='shippingSVG' />
         <h4>Envíos a domicilio sin cargo:</h4>

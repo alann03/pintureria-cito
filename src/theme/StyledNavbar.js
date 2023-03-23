@@ -2,6 +2,7 @@ import styled from "styled-components";
 import { colors } from "./colors";
 
 export const StyledNavbar = styled.div`
+	width: 100%;
 	.topNavbar {
 		display: flex;
 		align-items: center;
