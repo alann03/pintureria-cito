@@ -2,8 +2,10 @@ import styled from "styled-components";
 /* import { colors } from "./colors"; */
 
 export const StyledCarousel = styled.div`
+	height: 70vh;
+	flex: 1;
 	.carousel {
-		height: 70vh;
+		height: 100%;
 		.react-multi-carousel-dot-list {
 			margin-bottom: 1%;
 			opacity: 0.9;
@@ -20,17 +22,13 @@ export const StyledCarousel = styled.div`
 	img {
 		width: 100vw;
 		height: 95vh;
-		margin-top: 7%;
 	}
 
-	@media screen and (max-width: 500px) {
-		.carousel {
-			width: 100vw;
-			height: 50vh;
-		}
+	@media screen and (max-width: 550px) {
+		height: 50vh;
+		flex: none;
 		img {
 			height: 50vh;
-			margin-top: 0;
 		}
 	}
 `;

@@ -20,7 +20,7 @@ export const Navbar = ({ second }) => {
   };
 
   return (
-    <StyledNavbar style={{ position: second ? "block" : "fixed", opacity: second ? 0 : 1, zIndex: second ? -999 : 999 }}>
+    <StyledNavbar style={{ position: second ? "initial" : "fixed", opacity: second ? 0 : 1, zIndex: second ? -999 : 999 }}>
       <div className='topNavbar'>
         <img className="shippingSVG" src={ShippingSVG} alt='shippingSVG' />
         <h4>Envíos a domicilio sin cargo:</h4>
@@ -57,6 +57,6 @@ export const Navbar = ({ second }) => {
           </ul>
         </nav>
       </div>
-    </StyledNavbar>
+    </StyledNavbar >
   )
 }

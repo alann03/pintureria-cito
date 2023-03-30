@@ -36,8 +36,6 @@ export const ImageSlider = () => {
         infinite={true}
         autoPlay={true}
         autoPlaySpeed={3500}
-        removeArrowOnDeviceType={["tablet", "mobile"]}
-        showDots={true}
       >
         <img src={IMG1} alt='itemIMG' />
         <img src={IMG2} alt='itemIMG' />

@@ -18,6 +18,7 @@ export const StyledNavbar = styled.div`
 		p {
 			margin: 0 0 0 10px;
 			font-size: 14px;
+			color: ${colors.text};
 		}
 	}
 
@@ -65,6 +66,7 @@ export const StyledNavbar = styled.div`
 		a {
 			text-decoration: none;
 			font-size: 16px;
+			color: ${colors.text};
 			:active {
 				color: ${colors.text};
 				opacity: 0.7;
@@ -132,7 +134,7 @@ export const StyledNavbar = styled.div`
 			}
 
 			nav {
-				position: absolute;
+				position: fixed;
 				align-items: center;
 				flex-direction: column;
 				justify-content: center;
@@ -183,7 +185,7 @@ export const StyledNavbar = styled.div`
 		}
 	}
 
-	@media screen and (max-width: 500px) {
+	@media screen and (max-width: 550px) {
 		.topNavbar {
 			padding: 5px 2.5%;
 			.shippingSVG {
