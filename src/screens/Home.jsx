@@ -3,9 +3,12 @@ import { BrandsSlider } from '../components/BrandsSlider'
 import { ImageSlider } from '../components/ImageSlider'
 import { Location } from '../components/Location'
 import { Navbar } from '../components/Navbar'
+import useScreenSize from '../hooks/useResize'
 import { StyledSchedule } from '../theme/StyledSchedule'
 
 export const Home = () => {
+
+  const { width } = useScreenSize();
 
   return (
     <>
@@ -18,11 +21,11 @@ export const Home = () => {
           <p>Hasta las 19:00</p>
         </StyledSchedule>
         {
-          window.screen.width <= 550 && <BrandsSlider />
+          width <= 550 && <BrandsSlider />
         }
       </section>
       {
-        window.screen.width > 550 && <BrandsSlider />
+        width > 550 && <BrandsSlider />
       }
       <Location />
       <div style={{ height: 1000, backgroundColor: "#AAAAAA" }}></div>
