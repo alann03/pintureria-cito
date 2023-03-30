@@ -37,7 +37,7 @@ export const Navbar = ({ second }) => {
           </button>
           <ul className='leftUlNav'>
             <li>
-              <a className="leftNavItem" href="#">Ubicación</a>
+              <a className="leftNavItem" href="#location">Ubicación</a>
             </li>
             <li>
               <a className="leftNavItem" href="#">Contacto</a>

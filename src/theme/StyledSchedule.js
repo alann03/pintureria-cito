@@ -36,7 +36,7 @@ export const StyledSchedule = styled.div`
 	@media screen and (max-width: 550px) {
 		gap: 3px;
 		position: initial;
-		padding: 6% 0px;
+		/* padding: 6% 0px; */
 		h2 {
 			font-size: 18px;
 		}

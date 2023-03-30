@@ -1,6 +1,7 @@
 import React from 'react'
 import { BrandsSlider } from '../components/BrandsSlider'
 import { ImageSlider } from '../components/ImageSlider'
+import { Location } from '../components/Location'
 import { Navbar } from '../components/Navbar'
 import { StyledSchedule } from '../theme/StyledSchedule'
 
@@ -23,7 +24,8 @@ export const Home = () => {
       {
         window.screen.width > 550 && <BrandsSlider />
       }
-      <div style={{ height: 1000 }}></div>
+      <Location />
+      <div style={{ height: 1000, backgroundColor: "#AAAAAA" }}></div>
       <div style={{ height: 1000 }}></div>
       <div style={{ height: 1000 }}></div>
       <div style={{ height: 1000 }}></div>
