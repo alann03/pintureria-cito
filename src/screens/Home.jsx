@@ -8,6 +8,7 @@ import { Shipping } from '../components/Shipping'
 import { Contact } from '../components/Contact'
 import { Footer } from '../components/Footer'
 import useScreenSize from '../hooks/useResize'
+import { WhatsappButton } from '../components/WhatsappButton'
 
 export const Home = () => {
 
@@ -34,6 +35,7 @@ export const Home = () => {
       <Shipping />
       <Contact />
       <Footer />
+      <WhatsappButton phone={5491131149056} formattedMessage="" />
     </>
   )
 }

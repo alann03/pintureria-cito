@@ -13,7 +13,9 @@ export const Contact = () => {
       <h2>Contactános</h2>
       <div className='socialNetworksContainer'>
         <p className='socialNetwork'>
-          <img src={PhoneSVG} alt='PhoneSVG' />
+          <a href={`tel:+5491131149056`}>
+            <img src={PhoneSVG} alt='PhoneSVG' />
+          </a>
           {contact.phone_number}
         </p>
         <p className='socialNetwork'>
