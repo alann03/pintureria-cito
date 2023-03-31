@@ -9,10 +9,14 @@ import { Contact } from '../components/Contact'
 import { Footer } from '../components/Footer'
 import useScreenSize from '../hooks/useResize'
 import { WhatsappButton } from '../components/WhatsappButton'
+import { getOpenOrClosedData } from '../controllers/appControlers'
+import { PAINT_SHOP_INFO } from '../data/data'
 
 export const Home = () => {
 
   const { width } = useScreenSize();
+  const { open, day } = getOpenOrClosedData();
+  const { schedule } = PAINT_SHOP_INFO;
 
   return (
     <>
@@ -21,8 +25,10 @@ export const Home = () => {
         <Navbar second={true} />
         <ImageSlider />
         <StyledSchedule>
-          <h2>¡Abierto ahora!</h2>
-          <p>Hasta las 19:00</p>
+          <h2>{open ? "¡Abierto ahora!" : "Cerrado ahora"}</h2>
+          {
+            open && <p>{`Hasta las ${day === "Sat" ? schedule.saturday.closing : schedule.monday_to_friday.closing}`}</p>
+          }
         </StyledSchedule>
         {
           width <= 550 && <BrandsSlider />

@@ -1,6 +1,6 @@
 import { PAINT_SHOP_INFO } from "../data/data";
 
-const { delivery } = PAINT_SHOP_INFO;
+const { delivery, schedule } = PAINT_SHOP_INFO;
 
 export const getShippingLocations = () => {
 	let resp = "";
@@ -10,6 +10,27 @@ export const getShippingLocations = () => {
 		else resp += `${location}, `;
 	});
 	return resp;
+};
+
+export const getOpenOrClosedData = () => {
+	const today = new Date().toString().split(" ");
+	const day = today[0];
+	const hour = Number(today[4].substring(0, 5).replace(":", ""));
+	const status = {
+		open: true,
+		day,
+		hour,
+	};
+	const openingHour = Number(schedule.monday_to_friday.opening.replace(":", ""));
+	const closingHour = Number(schedule.monday_to_friday.closing.replace(":", ""));
+	const closingHourSat = Number(schedule.saturday.closing.replace(":", ""));
+	if (
+		day === "Sun" ||
+		(day === "Sat" && !(hour >= openingHour && hour <= closingHourSat)) ||
+		(day !== "Sun" && day !== "Sat" && !(hour >= openingHour && hour <= closingHour))
+	)
+		status.open = false;
+	return status;
 };
 
 export const formValidate = (input) => {
