@@ -1,12 +1,13 @@
 import React from 'react'
 import { BrandsSlider } from '../components/BrandsSlider'
-import { Contact } from '../components/Contact'
 import { ImageSlider } from '../components/ImageSlider'
+import { StyledSchedule } from '../theme/StyledSchedule'
 import { Location } from '../components/Location'
 import { Navbar } from '../components/Navbar'
 import { Shipping } from '../components/Shipping'
+import { Contact } from '../components/Contact'
+import { Footer } from '../components/Footer'
 import useScreenSize from '../hooks/useResize'
-import { StyledSchedule } from '../theme/StyledSchedule'
 
 export const Home = () => {
 
@@ -32,7 +33,7 @@ export const Home = () => {
       <Location />
       <Shipping />
       <Contact />
-      <div style={{ height: 300, backgroundColor: "#AAAAAA" }}></div>
+      <Footer />
     </>
   )
 }
