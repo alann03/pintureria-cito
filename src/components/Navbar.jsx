@@ -37,10 +37,10 @@ export const Navbar = ({ second }) => {
           </button>
           <ul className='leftUlNav'>
             <li>
-              <a className="leftNavItem" href="#location">Ubicación</a>
+              <a className="leftNavItem" href="#location" onClick={toggleMenu}>Ubicación</a>
             </li>
             <li>
-              <a className="leftNavItem" href="#">Contacto</a>
+              <a className="leftNavItem" href="#contact" onClick={toggleMenu}>Contacto</a>
             </li>
           </ul>
           <ul className='rightUlNav'>

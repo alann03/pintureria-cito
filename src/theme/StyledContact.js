@@ -70,6 +70,12 @@ export const StyledContact = styled.div`
 				font-family: ${fonts.primary};
 				font-size: 15px;
 			}
+			.error {
+				margin: 0;
+				width: 100%;
+				font-size: 14px;
+				color: #d90429;
+			}
 			button {
 				background: ${colors.background};
 				color: ${colors.lightText};
@@ -82,6 +88,12 @@ export const StyledContact = styled.div`
 				:hover {
 					transform: scale(1.1);
 					transition: 0.7s;
+				}
+			}
+			.disabledButtonSubmit {
+				opacity: 0.7;
+				:hover {
+					transform: none;
 				}
 			}
 		}
@@ -115,6 +127,9 @@ export const StyledContact = styled.div`
 				textarea {
 					padding: 9px;
 					font-size: 13px;
+				}
+				.error {
+					font-size: 12px;
 				}
 				button {
 					font-size: 14px;
@@ -153,6 +168,10 @@ export const StyledContact = styled.div`
 					width: 90%;
 					padding: 8px;
 					font-size: 11px;
+				}
+				.error {
+					width: 90%;
+					font-size: 10px;
 				}
 				button {
 					font-size: 12px;

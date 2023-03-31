@@ -11,3 +11,25 @@ export const getShippingLocations = () => {
 	});
 	return resp;
 };
+
+export const formValidate = (input) => {
+	const errors = {};
+
+	if (input.name) {
+		if (input.name.length > 30) errors.name = "El nombre es muy largo";
+	}
+	if (input.email) {
+		if (
+			!/^[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?$/.test(
+				input.email,
+			)
+		)
+			errors.email = "Debes introducir un email válido";
+		else if (input.email.length > 50) errors.name = "El email es muy largo";
+	}
+	if (input.message) {
+		if (input.message.length > 500) errors.message = "El mensaje es muy largo";
+	}
+
+	return errors;
+};
