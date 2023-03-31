@@ -16,6 +16,7 @@ export const StyledLocation = styled.div`
 		margin: 0;
 	}
 	.adress {
+		color: ${colors.text};
 		display: flex;
 		align-items: center;
 		font-size: 17px;

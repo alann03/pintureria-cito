@@ -6,7 +6,6 @@ export const useScreenSize = () => {
 
   useEffect(() => {
     window.addEventListener("resize", handleResize);
-    console.log("change resize");
     return () => {
       window.removeEventListener("resize", handleResize);
     };
