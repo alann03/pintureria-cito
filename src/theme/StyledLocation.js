@@ -115,4 +115,15 @@ export const StyledLocation = styled.div`
 			width: 100vw;
 		}
 	}
+
+	@media screen and (max-width: 360px) {
+		.adress {
+			font-size: 12px;
+			padding: 0 8px;
+			text-align: center;
+		}
+		.locationSVG {
+			display: none;
+		}
+	}
 `;

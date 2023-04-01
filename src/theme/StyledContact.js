@@ -180,4 +180,10 @@ export const StyledContact = styled.div`
 			}
 		}
 	}
+
+	@media screen and (max-width: 360px) {
+		.emailForm {
+			width: 200px;
+		}
+	}
 `;
