@@ -13,7 +13,7 @@ export const StyledSchedule = styled.div`
 	background-color: rgba(255, 255, 255, 0.7);
 	h2,
 	p {
-		font-family: ${fonts.secondary};
+		font-family: ${fonts.primary};
 		font-weight: bold;
 		margin: 0 0 0 0;
 	}

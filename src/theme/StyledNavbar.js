@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { colors } from "./colors";
+import { fonts } from "../assets/fonts/fonts";
 
 export const StyledNavbar = styled.div`
 	width: 100%;
@@ -13,11 +14,11 @@ export const StyledNavbar = styled.div`
 		.shippingSVG {
 			height: 35px;
 		}
-
 		h4,
 		p {
 			margin: 0 0 0 10px;
 			font-size: 14px;
+			font-family: ${fonts.primary};
 			color: ${colors.text};
 		}
 	}
@@ -65,7 +66,8 @@ export const StyledNavbar = styled.div`
 
 		a {
 			text-decoration: none;
-			font-size: 16px;
+			font-size: 17px;
+			font-family: ${fonts.primary};
 			color: ${colors.text};
 			:active {
 				color: ${colors.text};

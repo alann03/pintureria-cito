@@ -33,7 +33,7 @@ export const Contact = () => {
 
   return (
     <StyledContact id="contact">
-      <h2>Contactános</h2>
+      <h2>Contactanos</h2>
       <div className='socialNetworksContainer'>
         <p className='socialNetwork'>
           <a href={`tel:+5491131149056`}>
@@ -55,7 +55,7 @@ export const Contact = () => {
         </p>
       </div>
       <div className='emailForm'>
-        <h3>Enviános tu consulta</h3>
+        <h3>Envianos tu consulta</h3>
         <form
           action="https://formspree.io/f/xjvdawjw"
           method="POST"

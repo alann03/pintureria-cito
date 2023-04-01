@@ -5,7 +5,7 @@ export const StyledWhatsapp = styled.div`
 	bottom: 15px;
 	right: 15px;
 	position: fixed;
-	z-index: 999;
+	z-index: 500;
 	:hover {
 		transform: scale(1.1);
 		transition: 0.7s;
@@ -22,12 +22,8 @@ export const StyledWhatsapp = styled.div`
 		}
 	}
 
-	@media screen and (max-width: 768px) {
-		bottom: 5px;
-		right: 5px;
-		img {
-			width: 35px;
-			height: 35px;
-		}
+	@media screen and (max-width: 550px) {
+		bottom: 8px;
+		right: 8px;
 	}
 `;

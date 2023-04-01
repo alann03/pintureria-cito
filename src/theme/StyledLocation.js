@@ -37,7 +37,7 @@ export const StyledLocation = styled.div`
 		a {
 			width: 80%;
 			:hover {
-				transform: scale(1.4);
+				transform: scale(1.1);
 				transition: 1s;
 			}
 		}
@@ -50,9 +50,6 @@ export const StyledLocation = styled.div`
 		border-radius: 20px;
 		text-align: center;
 		padding: 20px;
-		/* display: flex;
-		flex-direction: column;
-		align-items: center; */
 		h4,
 		.schedule {
 			color: ${colors.lightText};

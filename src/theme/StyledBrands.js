@@ -4,7 +4,7 @@ import { fonts } from "../assets/fonts/fonts";
 
 export const StyledBrands = styled.div`
 	background-color: ${colors.background};
-	padding: 5% 0;
+	padding: 50px 0;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -39,9 +39,10 @@ export const StyledBrands = styled.div`
 	}
 
 	@media screen and (max-width: 768px) {
+		padding: 35px 0;
 		.sectionTitle {
 			font-size: 25px;
-			margin: 0 0 5% 0;
+			margin: 0px 0px 25px 0px;
 		}
 		.imageContainer {
 			width: 80px;

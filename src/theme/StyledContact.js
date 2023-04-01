@@ -105,7 +105,7 @@ export const StyledContact = styled.div`
 		}
 		.socialNetworksContainer {
 			gap: 30px;
-			margin: 17px 0 12px 0;
+			margin: 10px 0px 5px;
 			.socialNetwork {
 				font-size: 14px;
 				img {
